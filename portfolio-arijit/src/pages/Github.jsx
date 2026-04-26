@@ -95,46 +95,19 @@ function Github() {
       </div>
 
       {/* LinkedIn */}
-      <div
-        className="linkedin-card"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "80px",
-          padding: "10px",
-          marginTop: "15px",
-        }}
-      >
-        <img
-          src={linkedinData.imageUrl}
-          alt="profile"
-          style={{
-            width: "300px",
-            height: "250px",
-            borderRadius: "10px",
-            objectFit: "cover",
-          }}
-        />
+     <div className="linkedin-card">
+  <img src={linkedinData.imageUrl} alt="profile" />
 
-        <div style={{ display: "flex", flexDirection: "column", width: "700px" }}>
-          <h3 style={{ marginTop: 15 }}>{linkedinData.name}</h3>
-          <p style={{ margin: "4px 0" }}>{linkedinData.headline}</p>
-          <p style={{ margin: "4px 0" }}>📍 {linkedinData.location}</p>
+  <div className="linkedin-content">
+    <h3>{linkedinData.name}</h3>
+    <p>{linkedinData.headline}</p>
+    <p>📍 {linkedinData.location}</p>
 
-          <a
-            href={linkedinData.profileUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              marginTop: "6px",
-              textDecoration: "none",
-              color: "#0a66c2",
-            }}
-          >
-            Connect →
-          </a>
-        </div>
-      </div>
+    <a href={linkedinData.profileUrl} target="_blank">
+      Connect →
+    </a>
+  </div>
+</div>
     </div>
   );
 }
