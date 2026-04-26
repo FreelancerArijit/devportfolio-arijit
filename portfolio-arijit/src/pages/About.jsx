@@ -1,11 +1,50 @@
 // pages/About.jsx
-import React from 'react';
-
+import React from "react";
 
 const About = () => {
   const experiences = [
-    { year: '2024', title: 'Junior Frontend Developer', company: 'Current Role' },
-    { year: '2023', title: 'React Intern', company: 'Previous Experience' },
+    {
+      year: "2025",
+      title: "Junior Frontend Developer",
+      company: "Current Role",
+      about: `Developed responsive and scalable web applications using React.js (ES6+).
+
+Designed and maintained reusable, modular UI components.
+
+Integrated RESTful APIs and managed asynchronous data flows.
+
+Utilized React Hooks for efficient state and lifecycle management.
+
+Implemented modern UI with Tailwind CSS / Material UI.
+
+Built and validated dynamic forms using Formik and Yup.
+
+Optimized application performance and resolved UI issues.
+
+Ensured cross-browser compatibility and responsive design.
+
+Collaborated with cross-functional teams and managed code via Git.`,
+    },
+    {
+      year: "2024",
+      title: "React Intern",
+      company: "Previous Experience",
+      about: `Designed and developed complete user interfaces for a full-stack PHP application, focusing on clean and intuitive layouts
+
+Built responsive and visually consistent front-end screens using HTML, CSS, and JavaScript
+
+Translated application requirements into structured UI components and page designs
+
+Ensured cross-browser compatibility and optimized UI for different screen sizes and devices
+
+Improved overall user experience through better layout structuring, spacing, and visual hierarchy
+
+Collaborated with backend logic by integrating UI with dynamic data and workflows
+
+Maintained consistency in design patterns, styling, and component structure across the application
+
+`,
+    },
   ];
 
   return (
@@ -20,9 +59,10 @@ const About = () => {
           <div className="about-icon">👨‍💻</div>
           <h3>My Journey</h3>
           <p>
-            I'm a passionate frontend developer who transitioned into tech with a strong focus on 
-            building real-world applications. My expertise lies in React.js, modern frontend practices, 
-            and solving complex UI challenges.
+            I'm a passionate frontend developer who transitioned into tech with
+            a strong focus on building real-world applications. My expertise
+            lies in React.js, modern frontend practices, and solving complex UI
+            challenges.
           </p>
         </div>
 
@@ -30,9 +70,10 @@ const About = () => {
           <div className="about-icon">🎯</div>
           <h3>What Drives Me</h3>
           <p>
-            I thrive on debugging production issues, working with APIs, and managing complex state 
-            scenarios. Every bug is a learning opportunity, and every feature is a chance to create 
-            something impactful.
+            I thrive on debugging production issues, working with APIs, and
+            managing complex state scenarios. Every bug is a learning
+            opportunity, and every feature is a chance to create something
+            impactful.
           </p>
         </div>
 
@@ -40,8 +81,9 @@ const About = () => {
           <div className="about-icon">🛠️</div>
           <h3>Technical Focus</h3>
           <p>
-            Formik for complex forms, conditional rendering for dynamic UIs, and TypeScript for 
-            type safety. I build responsive, accessible applications that work flawlessly across devices.
+            Formik for complex forms, conditional rendering for dynamic UIs, and
+            TypeScript for type safety. I build responsive, accessible
+            applications that work flawlessly across devices.
           </p>
         </div>
       </div>
@@ -55,6 +97,9 @@ const About = () => {
               <div className="timeline-content">
                 <h4>{exp.title}</h4>
                 <p>{exp.company}</p>
+                <p style={{ marginTop: 10, whiteSpace: "pre-line" }}>
+                  {exp.about}
+                </p>
               </div>
             </div>
           ))}

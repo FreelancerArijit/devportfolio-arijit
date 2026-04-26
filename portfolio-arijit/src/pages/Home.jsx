@@ -11,7 +11,7 @@ const Home = () => {
         <div className="hero-content">
           <div className="badge">👋 Welcome to my portfolio</div>
           <h1 className="glow-text">
-            Junior Frontend Developer
+            Frontend Developer
           </h1>
           <h2>React.js Specialist</h2>
           <p className="hero-description">
@@ -23,7 +23,7 @@ const Home = () => {
             <a href="./projects" className="btn-primary">
               View Projects <span>→</span>
             </a>
-            <a href="/contact" className="btn-secondary">
+            <a href="mailto:arijitchattopadhyay2004@gmail.com" className="btn-secondary">
               Contact Me
             </a>
           </div>
@@ -44,7 +44,7 @@ const Home = () => {
   name: "Your Name",
   role: "Frontend Dev",
   stack: ["React", "JS", "TS"],
-  passion: "Building UIs"
+  passion: "Building Functional UIs"
 };
 
 developer.code();`}

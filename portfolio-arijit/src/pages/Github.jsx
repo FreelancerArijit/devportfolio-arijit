@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function Github() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const [linkedinData, setLinkedinData] = useState(null);
 
@@ -12,15 +12,15 @@ function Github() {
     fetch("https://api.github.com/users/FreelancerArijit")
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Failed to fetch GitHub data');
+          throw new Error("Failed to fetch GitHub data");
         }
         return response.json();
       })
-      .then(data => {
+      .then((data) => {
         setData(data);
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         setError(err.message);
         setLoading(false);
       });
@@ -29,13 +29,16 @@ function Github() {
   // LinkedIn (static for now)
   useEffect(() => {
     setLinkedinData({
-      name: "Arijit Chakraborty",
-      headline: "Frontend Developer | React.js Specialist",
+      name: "Arijit Chattopadhyay",
+      headline:
+        "Frontend Developer | React Developer | JavaScript Developer | HTML | CSS | Tailwind CSS | JavaScript  |  Typescript | React | NEXT | REST API Integration",
+      imageUrl:
+        "./images/profile2.jpeg",
       connections: 500,
-      profileUrl: "https://www.linkedin.com/in/arijit-chakraborty-761b4b221/",
+      profileUrl: "https://linkedin.com/in/arijit-chattopadhyay-52088b27b",
       location: "India",
       followers: 200,
-      posts: 15
+      posts: 15,
     });
   }, []);
 
@@ -66,10 +69,10 @@ function Github() {
 
         <div className="github-body">
           <div className="left">
-            <img 
-              src={data.avatar_url} 
-              width={300} 
-              alt={data.name || data.login} 
+            <img
+              src={data.avatar_url}
+              width={300}
+              alt={data.name || data.login}
             />
             <a href={data.html_url} target="_blank" rel="noopener noreferrer">
               Visit GitHub →
@@ -92,14 +95,45 @@ function Github() {
       </div>
 
       {/* LinkedIn */}
-      <div className="linkedin-card">
-        <h3>{linkedinData.name}</h3>
-        <p>{linkedinData.headline}</p>
-        <p>📍 {linkedinData.location}</p>
-        <p>{linkedinData.connections}+ Connections</p>
-        <a href={linkedinData.profileUrl} target="_blank" rel="noopener noreferrer">
-          Connect →
-        </a>
+      <div
+        className="linkedin-card"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "80px",
+          padding: "10px",
+          marginTop: "15px",
+        }}
+      >
+        <img
+          src={linkedinData.imageUrl}
+          alt="profile"
+          style={{
+            width: "300px",
+            height: "250px",
+            borderRadius: "10px",
+            objectFit: "cover",
+          }}
+        />
+
+        <div style={{ display: "flex", flexDirection: "column", width: "700px" }}>
+          <h3 style={{ marginTop: 15 }}>{linkedinData.name}</h3>
+          <p style={{ margin: "4px 0" }}>{linkedinData.headline}</p>
+          <p style={{ margin: "4px 0" }}>📍 {linkedinData.location}</p>
+
+          <a
+            href={linkedinData.profileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              marginTop: "6px",
+              textDecoration: "none",
+              color: "#0a66c2",
+            }}
+          >
+            Connect →
+          </a>
+        </div>
       </div>
     </div>
   );

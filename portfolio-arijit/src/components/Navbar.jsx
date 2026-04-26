@@ -19,7 +19,7 @@ const Navbar = () => {
     { path: '/', name: 'Home', icon: '🏠' },
     { path: '/about', name: 'About', icon: '👨‍💻' },
     { path: '/projects', name: 'Projects', icon: '🚀' },
-    { path: '/github', name: 'GitHub', icon: '🐙' },
+    { path: '/social', name: 'Social', icon: '🐙' },
   ];
 
   return (
@@ -40,7 +40,7 @@ const Navbar = () => {
               }
               onClick={() => setIsOpen(false)}
             >
-              <span className="nav-icon">{link.icon}</span>
+              {/* <span className="nav-icon">{link.icon}</span> */}
               <span>{link.name}</span>
             </NavLink>
           ))}
