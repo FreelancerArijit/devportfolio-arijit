@@ -6,7 +6,12 @@
 }
 
 body {
-  font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+  font-family:
+    "Segoe UI",
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
   background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
   color: #f0f0f0;
   min-height: 100vh;
@@ -69,7 +74,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100vw;   
+  width: 100vw;
   left: 0;
   background: rgba(15, 12, 41, 0.8);
   backdrop-filter: blur(10px);
@@ -139,11 +144,15 @@ body {
 
 .nav-link.active {
   color: #667eea;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.2),
+    rgba(118, 75, 162, 0.2)
+  );
 }
 
 .nav-link.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 50%;
@@ -270,7 +279,8 @@ h2 {
   margin-bottom: 3rem;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
   padding: 0.8rem 2rem;
   border-radius: 8px;
   text-decoration: none;
@@ -345,9 +355,15 @@ h2 {
   border-radius: 50%;
 }
 
-.dot.red { background: #ff5f56; }
-.dot.yellow { background: #ffbd2e; }
-.dot.green { background: #27c93f; }
+.dot.red {
+  background: #ff5f56;
+}
+.dot.yellow {
+  background: #ffbd2e;
+}
+.dot.green {
+  background: #27c93f;
+}
 
 .code-content pre {
   padding: 1.5rem;
@@ -356,7 +372,8 @@ h2 {
   overflow-x: auto;
 }
 
-.skills-section, .featured-section {
+.skills-section,
+.featured-section {
   margin-bottom: 4rem;
 }
 
@@ -442,8 +459,12 @@ h3 {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 968px) {
@@ -475,15 +496,15 @@ h3 {
   .glow-text {
     font-size: 1.8rem;
   }
-  
+
   h2 {
     font-size: 1.3rem;
   }
-  
+
   .stats {
     gap: 1.5rem;
   }
-  
+
   .stat-number {
     font-size: 1.5rem;
   }
@@ -589,7 +610,11 @@ h3 {
 }
 
 .debugging-section {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1),
+    rgba(118, 75, 162, 0.1)
+  );
   border-radius: 24px;
   padding: 2rem;
 }
@@ -628,12 +653,12 @@ h3 {
   .about-header h1 {
     font-size: 2rem;
   }
-  
+
   .timeline-item {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .debugging-tips {
     grid-template-columns: 1fr;
   }
@@ -715,7 +740,11 @@ h3 {
   font-size: 4rem;
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1),
+    rgba(118, 75, 162, 0.1)
+  );
 }
 
 .project-content {
@@ -789,11 +818,11 @@ h3 {
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .projects-header h1 {
     font-size: 2rem;
   }
-  
+
   .filter-btn {
     padding: 0.4rem 1rem;
     font-size: 0.8rem;
@@ -804,221 +833,139 @@ h3 {
 .github-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
+/* Container */
 .github-container {
   max-width: 1200px;
   margin: 0 auto;
-  animation: fadeInUp 0.6s ease-out;
 }
 
+/* Header */
 .github-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .github-header h1 {
-  font-size: 2.5rem;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  color: white;
 }
 
-.github-header p {
-  color: #a0a0a0;
-  font-size: 1.1rem;
-}
-
+/* Main Card */
 .github-body {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 3rem;
+  gap: 2rem;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  border-radius: 24px;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding: 1.5rem;
 }
 
-.github-body:hover {
-  transform: translateY(-5px);
-  border-color: rgba(102, 126, 234, 0.5);
-}
-
+/* Left */
 .left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.github-avatar {
+.left img {
   width: 100%;
-  max-width: 300px;
-  border-radius: 20px;
-  border: 4px solid #667eea;
-  transition: all 0.3s ease;
+  max-width: 260px;
+  border-radius: 16px;
 }
 
-.github-avatar:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-}
-
-.github-btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border: none;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.github-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-}
-
+/* Right */
 .right {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
+  color: white;
 }
 
 .right h1 {
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 0;
-}
-
-.username {
-  color: #667eea;
-  font-size: 1.2rem;
-  margin-top: -0.5rem;
-}
-
-.bio-section {
-  background: rgba(102, 126, 234, 0.1);
-  padding: 1rem;
-  border-radius: 12px;
-  border-left: 3px solid #667eea;
-  margin: 0.5rem 0;
-}
-
-.bio-section p {
-  color: #c0c0c0;
-  line-height: 1.6;
-}
-
-.stats-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.stat-card {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-  border-radius: 12px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-  transform: translateY(-3px);
-  background: rgba(102, 126, 234, 0.1);
-}
-
-.stat-label {
-  display: block;
-  font-size: 0.85rem;
-  color: #888;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.stat-value {
-  display: block;
   font-size: 2rem;
-  font-weight: bold;
-  color: #667eea;
 }
 
-.repo-link-section {
-  margin-top: 1rem;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-}
+/* ===================== */
+/* 🔥 LinkedIn Section */
+/* ===================== */
 
-.repo-link-section h3 {
-  color: #888;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.repo-url {
-  color: #a8ff78;
-  text-decoration: none;
-  word-break: break-all;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-}
-
-.repo-url:hover {
-  color: #667eea;
-  text-decoration: underline;
-}
-
-/* Loading State */
-.github-loading {
+.linkedin-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap; /* ✅ important */
+}
+
+.linkedin-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.linkedin-content {
+  flex: 1;
+  min-width: 250px; /* prevents collapse */
   color: white;
 }
 
-.spinner {
-  width: 50px;
-  height: 50px;
-  border: 3px solid rgba(102, 126, 234, 0.3);
-  border-top-color: #667eea;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin-bottom: 1rem;
+/* ===================== */
+/* 📱 Tablet */
+/* ===================== */
+@media (max-width: 768px) {
+  .github-body {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .right h1 {
+    font-size: 1.6rem;
+  }
+
+  .linkedin-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .linkedin-content {
+    width: 100%;
+  }
 }
 
-/* Error State */
-.github-error {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-  color: #ff6b6b;
-  font-size: 1.2rem;
+/* ===================== */
+/* 📱 Mobile */
+/* ===================== */
+@media (max-width: 480px) {
+  .github-page {
+    padding: 1rem;
+  }
+
+  .github-body {
+    padding: 1rem;
+  }
+
+  .right h1 {
+    font-size: 1.4rem;
+  }
 }
 
 /* Animations */
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1029,59 +976,6 @@ h3 {
     transform: translateY(0);
   }
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .github-body {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .left {
-    text-align: center;
-  }
-  
-  .github-avatar {
-    max-width: 200px;
-  }
-  
-  .right h1 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  
-  .username {
-    text-align: center;
-  }
-  
-  .stats-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .github-header h1 {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .github-page {
-    padding: 1rem;
-  }
-  
-  .github-body {
-    padding: 1.5rem;
-  }
-  
-  .right h1 {
-    font-size: 1.5rem;
-  }
-  
-  .stat-value {
-    font-size: 1.5rem;
-  }
-}
-
-/* Add this to your existing Github.css file */
 
 /* LinkedIn Card Styles */
 .linkedin-card-container {
@@ -1101,13 +995,18 @@ h3 {
 }
 
 .linkedin-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 119, 181, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 119, 181, 0.1),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -1259,32 +1158,32 @@ h3 {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .linkedin-left {
     align-items: center;
   }
-  
+
   .linkedin-right {
     align-items: center;
     text-align: center;
   }
-  
+
   .linkedin-connect-btn {
     align-self: center;
   }
-  
+
   .linkedin-location {
     justify-content: center;
   }
-  
+
   .linkedin-card {
     padding: 1.5rem;
   }
-  
+
   .linkedin-right h3 {
     font-size: 1.4rem;
   }
-  
+
   .linkedin-stats {
     flex-wrap: wrap;
     justify-content: center;
@@ -1296,11 +1195,11 @@ h3 {
     width: 100px;
     height: 100px;
   }
-  
+
   .linkedin-stat {
     min-width: 60px;
   }
-  
+
   .linkedin-stat-value {
     font-size: 1rem;
   }
