@@ -6,7 +6,7 @@ const About = () => {
     {
       year: "2025",
       title: "Junior Frontend Developer",
-      company: "Current Role",
+      company: "Dishashree sofftech pvt. ltd.",
       about: `Developed responsive and scalable web applications using React.js (ES6+).
 
 Designed and maintained reusable, modular UI components.
@@ -27,8 +27,8 @@ Collaborated with cross-functional teams and managed code via Git.`,
     },
     {
       year: "2024",
-      title: "React Intern",
-      company: "Previous Experience",
+      title: " Frontend Developer Intern",
+      company: "Euhoria GenX",
       about: `Designed and developed complete user interfaces for a full-stack PHP application, focusing on clean and intuitive layouts
 
 Built responsive and visually consistent front-end screens using HTML, CSS, and JavaScript
