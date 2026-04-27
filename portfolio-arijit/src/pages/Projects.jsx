@@ -32,7 +32,7 @@ const Projects = () => {
       title: "Travel agency website",
       description:
         "Travel agency website where user can book tours as per their budget and preference.",
-      tech: ["React", "Axios", "OpenWeather API", "CSS Modules"],
+      tech: ["React", "Axios", "CSS Modules"],
       type: "api",
       github:
         "https://github.com/FreelancerArijit/Travel-agency-website-development",
